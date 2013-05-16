@@ -1,0 +1,24 @@
+RewriteEngine on
+
+##This Example Shows the following rewrite
+##
+##Input: test/face
+##Output: test.php?id=face
+##
+##The Following rewrite has a condition if
+##the original condition contained test.php
+##(meaning attempted direct access to test.php)
+##The request is [F]orbidden(404)
+##
+##RewriteRule ^test/(\w+)/?$ test.php?id=$1
+
+##RewriteCond %{THE_REQUEST} test\.php
+##RewriteRule ^test\.php - [F]
+
+RewriteRule ^/?$ index.php?page=home [QSA,L]
+RewriteRule ^(\w+)/?$ index.php?page=$1 [QSA,L]
+
+##RewriteCond %{THE_REQUEST} !-d
+##RewriteCond %{THE_REQUEST} !-f
+##RewriteCond %{THE_REQUEST} index\.php
+##RewriteRule ^index\.php - [F]

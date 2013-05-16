@@ -1,0 +1,178 @@
+/*contains header, footer, and reset styles
+ *also contains base styles for common elements like panels
+ *and buttons
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike,  sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  padding: 0;
+  margin:0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align:baseline;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: Helvetica, Arial, sans-serif;
+  background: url('../images/main_bg.jpg') repeat left top;
+  font-size:13px;
+  color:#333333; 
+}
+
+a {
+  text-decoration: none;
+  color:#0073b2;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+hr {
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #333333;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* generic site styles for containers and layout */
+#site-wrapper {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: Helvetica, Arial, Sans-serif;
+}
+
+#content-wrapper {
+  display: block;
+  width: 974px;
+  margin: auto;
+}
+
+#site-header {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#site-header .wrapper {
+  width: 974px;
+  margin: 0 auto;
+}
+
+#site-header .li-logo {
+  display: inline-block;
+  height: 29px;
+  padding: 6px 0 0 0;
+  margin: 0 0 0 0px;
+  font-weight: thin;
+  font-weight: 200;
+}
+
+#site-header .li-logo a {
+  text-decoration: none;
+}
+
+#site-header .li-logo .logo-image {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#site-header .li-logo .logo-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 4px 0 0 5px;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+#site-header .header-content {
+  display: block;
+  margin: 0 auto;
+  width: 974px;
+}
+
+#site-header .header-top {
+  display: block;
+  height: 38px;
+  background: #252525;
+}
+
+.navigation-link-group {
+  display: block;
+  float: left;
+  margin-left: -9px;
+}
+
+.navigation-link-group li {
+  display: block;
+  margin: 2px 0 0 0;
+  float: left;
+  line-height: 37px;
+}
+
+.navigation-link-group li:hover {
+  background: #000000;
+}
+
+.navigation-link {
+  display: block;
+  padding: 0 10px;
+  color: #71c5ef;
+}
+
+.navigation-link-group li:hover .navigation-link,
+.navigation-link.selected {
+  color: #ffffff;
+}
+
+#site-footer { 
+  display: block;
+  float: left;
+  width:974px; 
+  height:auto; 
+  margin: auto;
+  padding: 10px 0 45px 0;
+}
+
+.footer-text {
+  font-size: 11px;
+  color: #666666;
+  line-height: 12px;
+}
+
+#site-footer .footer-text a {
+  font-size: 11px;
+  color: #333333;
+  font-weight: bold;
+}

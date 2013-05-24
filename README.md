@@ -4,8 +4,7 @@ a generic website framework utilizing a light-weight standardized template.
 
 
 features:
-- 
-
+- php administration back-end
 
 
 requirements:
@@ -13,4 +12,3 @@ requirements:
 - html
 - css
 - javascript
-- 

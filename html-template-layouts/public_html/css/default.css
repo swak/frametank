@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* @group resets and elements */
+* { margin: 0; padding: 0; }
+
+html { 
+	font-family: sans-serif; 
+	background: white; 
+	background-image: url(img/background.png);
+	background-repeat: repeat-x;
+}
